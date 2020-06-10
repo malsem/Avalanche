@@ -1,0 +1,25 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>net.pl3x.avalanche</groupId>
+    <artifactId>avalanche-super</artifactId>
+    <version>dev-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>Avalanche-Super</name>
+    <description>Super project for Avalanche</description>
+    <url>https://github.com/pl3xgaming/Avalanche</url>
+
+    <modules>
+        <module>Avalanche-Proxy</module>
+    </modules>
+
+    <build>
+        <defaultGoal>clean install</defaultGoal>
+    </build>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+</project>
