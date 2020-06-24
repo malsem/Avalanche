@@ -17,7 +17,7 @@ Purpur API maven dependency:
 <dependency>
     <groupId>net.pl3x.avalanche</groupId>
     <artifactId>avalanche-api</artifactId>
-    <version>1.15-SNAPSHOT</version>
+    <version>1.16-R0.1-SNAPSHOT</version>
     <scope>provided</scope>
 </dependency>
 ```
