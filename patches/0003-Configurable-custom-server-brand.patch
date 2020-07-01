@@ -1,4 +1,4 @@
-From 02e730d0586e6d1d40e0b29124f8324025c5ff32 Mon Sep 17 00:00:00 2001
+From e754b4d760d4b58d08afad8515e90b5dc50b1f6d Mon Sep 17 00:00:00 2001
 From: William Blake Galbreath <Blake.Galbreath@GMail.com>
 Date: Tue, 9 Jun 2020 22:46:29 -0500
 Subject: [PATCH] Configurable custom server brand
@@ -26,10 +26,10 @@ index 78401dae..72cd9b35 100644
                  brand.release();
              }
 diff --git a/proxy/src/main/java/net/md_5/bungee/connection/DownstreamBridge.java b/proxy/src/main/java/net/md_5/bungee/connection/DownstreamBridge.java
-index daac8604..6dad9b61 100644
+index 8c7e3ab8..677c9bd7 100644
 --- a/proxy/src/main/java/net/md_5/bungee/connection/DownstreamBridge.java
 +++ b/proxy/src/main/java/net/md_5/bungee/connection/DownstreamBridge.java
-@@ -280,8 +280,15 @@ public class DownstreamBridge extends PacketHandler
+@@ -281,8 +281,15 @@ public class DownstreamBridge extends PacketHandler
  
              Preconditions.checkState( !serverBrand.contains( bungee.getName() ), "Cannot connect proxy to itself!" );
  

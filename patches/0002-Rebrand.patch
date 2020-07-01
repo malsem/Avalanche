@@ -1,4 +1,4 @@
-From 0a37e7cc6e2c132a6856f9bb0c0f1cad95c7c655 Mon Sep 17 00:00:00 2001
+From 8803af9bc657353999908ae675d55e37844da755 Mon Sep 17 00:00:00 2001
 From: William Blake Galbreath <Blake.Galbreath@GMail.com>
 Date: Wed, 10 Jun 2020 13:24:02 -0500
 Subject: [PATCH] Rebrand
@@ -31,7 +31,7 @@ index d703d6d2..db465d52 100644
      }
  
 diff --git a/pom.xml b/pom.xml
-index b01ee986..6097f1ac 100644
+index b444e96b..44920abe 100644
 --- a/pom.xml
 +++ b/pom.xml
 @@ -79,7 +79,7 @@
@@ -69,10 +69,10 @@ index b01ee986..6097f1ac 100644
                      </execution>
                  </executions>
 diff --git a/proxy/src/main/java/net/md_5/bungee/BungeeCord.java b/proxy/src/main/java/net/md_5/bungee/BungeeCord.java
-index a963c748..95c42687 100644
+index 2938f2f1..1d9ad39f 100644
 --- a/proxy/src/main/java/net/md_5/bungee/BungeeCord.java
 +++ b/proxy/src/main/java/net/md_5/bungee/BungeeCord.java
-@@ -189,7 +189,7 @@ public class BungeeCord extends ProxyServer
+@@ -188,7 +188,7 @@ public class BungeeCord extends ProxyServer
      public BungeeCord() throws IOException
      {
          // Java uses ! to indicate a resource inside of a jar/zip/other container. Running Bungee from within a directory that has a ! will cause this to muck up.
