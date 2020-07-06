@@ -1,4 +1,4 @@
-From 8803af9bc657353999908ae675d55e37844da755 Mon Sep 17 00:00:00 2001
+From cacd3da9a9da54856d05f943994050cf2473cef7 Mon Sep 17 00:00:00 2001
 From: William Blake Galbreath <Blake.Galbreath@GMail.com>
 Date: Wed, 10 Jun 2020 13:24:02 -0500
 Subject: [PATCH] Rebrand
@@ -143,7 +143,7 @@ index 65121ba2..81629f36 100644
              SocketAddress address = Util.getAddr( addr );
              ServerInfo info = ProxyServer.getInstance().constructServerInfo( name, address, motd, restricted );
 diff --git a/proxy/src/main/java/net/md_5/bungee/module/JenkinsModuleSource.java b/proxy/src/main/java/net/md_5/bungee/module/JenkinsModuleSource.java
-index 9b20d0df..f1010c34 100644
+index 9b20d0df..a7f552a8 100644
 --- a/proxy/src/main/java/net/md_5/bungee/module/JenkinsModuleSource.java
 +++ b/proxy/src/main/java/net/md_5/bungee/module/JenkinsModuleSource.java
 @@ -18,7 +18,7 @@ public class JenkinsModuleSource implements ModuleSource
@@ -151,7 +151,7 @@ index 9b20d0df..f1010c34 100644
          try
          {
 -            URL website = new URL( "https://papermc.io/ci/job/Waterfall/" + version.getBuild() + "/artifact/Waterfall-Proxy/module/" + module.getName().replace( '_', '-' ) + "/target/" + module.getName() + ".jar" );
-+            URL website = new URL( "https://ci.pl3x.net/job/Avalanche/" + version.getBuild() + "/artifact/Avalanche-Proxy/module/" + module.getName().replace( '_', '-' ) + "/target/" + module.getName() + ".jar" ); // Avalanche
++            URL website = new URL( "https://ci.pl3x.net/job/Avalanche/" + version.getBuild() + "/artifact/final/" + module.getName() + ".jar" ); // Avalanche
              URLConnection con = website.openConnection();
              // 15 second timeout at various stages
              con.setConnectTimeout( 15000 );
