@@ -1,11 +1,11 @@
-From ba13f31e6de0c8db6638f44a6109451dca430797 Mon Sep 17 00:00:00 2001
+From e05d9f20a39aad028d18d29b6abd84181e89061d Mon Sep 17 00:00:00 2001
 From: Troy Frew <fuzzy_bot@arenaga.me>
 Date: Tue, 15 Nov 2016 08:56:43 -0500
 Subject: [PATCH] POM Changes
 
 
 diff --git a/api/pom.xml b/api/pom.xml
-index 3db591156..c3959f559 100644
+index b276ee737..3e8ffd1a0 100644
 --- a/api/pom.xml
 +++ b/api/pom.xml
 @@ -4,42 +4,42 @@
@@ -16,7 +16,7 @@ index 3db591156..c3959f559 100644
 -        <artifactId>waterfall-parent</artifactId>
 +        <groupId>net.pl3x.avalanche</groupId>
 +        <artifactId>avalanche-parent</artifactId>
-         <version>1.16-R0.2-SNAPSHOT</version>
+         <version>1.16-R0.3-SNAPSHOT</version>
          <relativePath>../pom.xml</relativePath>
      </parent>
  
@@ -24,7 +24,7 @@ index 3db591156..c3959f559 100644
 -    <artifactId>waterfall-api</artifactId>
 +    <groupId>net.pl3x.avalanche</groupId>
 +    <artifactId>avalanche-api</artifactId>
-     <version>1.16-R0.2-SNAPSHOT</version>
+     <version>1.16-R0.3-SNAPSHOT</version>
      <packaging>jar</packaging>
  
 -    <name>Waterfall-API</name>
@@ -65,7 +65,7 @@ index 3db591156..c3959f559 100644
              <scope>compile</scope>
          </dependency>
 diff --git a/bootstrap/pom.xml b/bootstrap/pom.xml
-index 9c1ec3740..32f0479d1 100644
+index 3730c14cb..02ade69ab 100644
 --- a/bootstrap/pom.xml
 +++ b/bootstrap/pom.xml
 @@ -4,19 +4,19 @@
@@ -76,7 +76,7 @@ index 9c1ec3740..32f0479d1 100644
 -        <artifactId>waterfall-parent</artifactId>
 +        <groupId>net.pl3x.avalanche</groupId>
 +        <artifactId>avalanche-parent</artifactId>
-         <version>1.16-R0.2-SNAPSHOT</version>
+         <version>1.16-R0.3-SNAPSHOT</version>
          <relativePath>../pom.xml</relativePath>
      </parent>
  
@@ -84,7 +84,7 @@ index 9c1ec3740..32f0479d1 100644
 -    <artifactId>waterfall-bootstrap</artifactId>
 +    <groupId>net.pl3x.avalanche</groupId>
 +    <artifactId>avalanche-bootstrap</artifactId>
-     <version>1.16-R0.2-SNAPSHOT</version>
+     <version>1.16-R0.3-SNAPSHOT</version>
      <packaging>jar</packaging>
  
 -    <name>Waterfall-Bootstrap</name>
@@ -114,7 +114,7 @@ index 9c1ec3740..32f0479d1 100644
              <plugin>
                  <groupId>org.apache.maven.plugins</groupId>
 diff --git a/chat/pom.xml b/chat/pom.xml
-index 3055357bb..164a0e76c 100644
+index 4c08a1512..1950ef5eb 100644
 --- a/chat/pom.xml
 +++ b/chat/pom.xml
 @@ -4,20 +4,19 @@
@@ -126,7 +126,7 @@ index 3055357bb..164a0e76c 100644
 -        <artifactId>waterfall-parent</artifactId>
 +        <groupId>net.pl3x.avalanche</groupId>
 +        <artifactId>avalanche-parent</artifactId>
-         <version>1.16-R0.2-SNAPSHOT</version>
+         <version>1.16-R0.3-SNAPSHOT</version>
          <relativePath>../pom.xml</relativePath>
      </parent>
  
@@ -134,7 +134,7 @@ index 3055357bb..164a0e76c 100644
 -    <artifactId>waterfall-chat</artifactId>
 +    <groupId>net.pl3x.avalanche</groupId>
 +    <artifactId>avalanche-chat</artifactId>
-     <version>1.16-R0.2-SNAPSHOT</version>
+     <version>1.16-R0.3-SNAPSHOT</version>
      <packaging>jar</packaging>
  
 -    <name>Waterfall-Chat</name>
@@ -145,7 +145,7 @@ index 3055357bb..164a0e76c 100644
      <dependencies>
          <dependency>
 diff --git a/config/pom.xml b/config/pom.xml
-index cec0e98a8..60e91ab39 100644
+index 43542e86a..b6f5c7b5f 100644
 --- a/config/pom.xml
 +++ b/config/pom.xml
 @@ -4,19 +4,19 @@
@@ -156,7 +156,7 @@ index cec0e98a8..60e91ab39 100644
 -        <artifactId>waterfall-parent</artifactId>
 +        <groupId>net.pl3x.avalanche</groupId>
 +        <artifactId>avalanche-parent</artifactId>
-         <version>1.16-R0.2-SNAPSHOT</version>
+         <version>1.16-R0.3-SNAPSHOT</version>
          <relativePath>../pom.xml</relativePath>
      </parent>
  
@@ -164,7 +164,7 @@ index cec0e98a8..60e91ab39 100644
 -    <artifactId>waterfall-config</artifactId>
 +    <groupId>net.pl3x.avalanche</groupId>
 +    <artifactId>avalanche-config</artifactId>
-     <version>1.16-R0.2-SNAPSHOT</version>
+     <version>1.16-R0.3-SNAPSHOT</version>
      <packaging>jar</packaging>
  
 -    <name>Waterfall-Config</name>
@@ -175,7 +175,7 @@ index cec0e98a8..60e91ab39 100644
      <dependencies>
          <dependency>
 diff --git a/event/pom.xml b/event/pom.xml
-index 5c6342727..549383e1a 100644
+index c5c7f8b47..867d70e62 100644
 --- a/event/pom.xml
 +++ b/event/pom.xml
 @@ -4,17 +4,17 @@
@@ -186,7 +186,7 @@ index 5c6342727..549383e1a 100644
 -        <artifactId>waterfall-parent</artifactId>
 +        <groupId>net.pl3x.avalanche</groupId>
 +        <artifactId>avalanche-parent</artifactId>
-         <version>1.16-R0.2-SNAPSHOT</version>
+         <version>1.16-R0.3-SNAPSHOT</version>
          <relativePath>../pom.xml</relativePath>
      </parent>
  
@@ -194,7 +194,7 @@ index 5c6342727..549383e1a 100644
 -    <artifactId>waterfall-event</artifactId>
 +    <groupId>net.pl3x.avalanche</groupId>
 +    <artifactId>avalanche-event</artifactId>
-     <version>1.16-R0.2-SNAPSHOT</version>
+     <version>1.16-R0.3-SNAPSHOT</version>
      <packaging>jar</packaging>
  
 -    <name>Waterfall-Event</name>
@@ -203,7 +203,7 @@ index 5c6342727..549383e1a 100644
 +    <description>Generic java event dispatching API intended for use with Avalanche</description>
  </project>
 diff --git a/log/pom.xml b/log/pom.xml
-index ccba264ad..5981bdba8 100644
+index 5cb1bd192..5c113bc42 100644
 --- a/log/pom.xml
 +++ b/log/pom.xml
 @@ -4,19 +4,19 @@
@@ -214,7 +214,7 @@ index ccba264ad..5981bdba8 100644
 -        <artifactId>waterfall-parent</artifactId>
 +        <groupId>net.pl3x.avalanche</groupId>
 +        <artifactId>avalanche-parent</artifactId>
-         <version>1.16-R0.2-SNAPSHOT</version>
+         <version>1.16-R0.3-SNAPSHOT</version>
          <relativePath>../pom.xml</relativePath>
      </parent>
  
@@ -222,7 +222,7 @@ index ccba264ad..5981bdba8 100644
 -    <artifactId>waterfall-log</artifactId>
 +    <groupId>net.pl3x.avalanche</groupId>
 +    <artifactId>avalanche-log</artifactId>
-     <version>1.16-R0.2-SNAPSHOT</version>
+     <version>1.16-R0.3-SNAPSHOT</version>
      <packaging>jar</packaging>
  
 -    <name>Waterfall-Log</name>
@@ -244,7 +244,7 @@ index ccba264ad..5981bdba8 100644
              <scope>compile</scope>
          </dependency>
 diff --git a/log4j/pom.xml b/log4j/pom.xml
-index 2229d3476..a059106fa 100644
+index 5ec771c9e..a04b011b3 100644
 --- a/log4j/pom.xml
 +++ b/log4j/pom.xml
 @@ -3,19 +3,19 @@
@@ -255,7 +255,7 @@ index 2229d3476..a059106fa 100644
 -        <artifactId>waterfall-parent</artifactId>
 +        <groupId>net.pl3x.avalanche</groupId>
 +        <artifactId>avalanche-parent</artifactId>
-         <version>1.16-R0.2-SNAPSHOT</version>
+         <version>1.16-R0.3-SNAPSHOT</version>
          <relativePath>../pom.xml</relativePath>
      </parent>
  
@@ -263,7 +263,7 @@ index 2229d3476..a059106fa 100644
 -    <artifactId>waterfall-log4j</artifactId>
 +    <groupId>net.pl3x.avalanche</groupId>
 +    <artifactId>avalanche-log4j</artifactId>
-     <version>1.16-R0.2-SNAPSHOT</version>
+     <version>1.16-R0.3-SNAPSHOT</version>
      <packaging>jar</packaging>
  
 -    <name>Waterfall-Log</name>
@@ -299,7 +299,7 @@ index 2229d3476..a059106fa 100644
      </dependencies>
  </project>
 diff --git a/module/cmd-alert/pom.xml b/module/cmd-alert/pom.xml
-index 8fb7bb6f2..74b3d1d5f 100644
+index 809f8bb60..ebdd0c5e1 100644
 --- a/module/cmd-alert/pom.xml
 +++ b/module/cmd-alert/pom.xml
 @@ -4,14 +4,14 @@
@@ -310,7 +310,7 @@ index 8fb7bb6f2..74b3d1d5f 100644
 -        <artifactId>waterfall-module</artifactId>
 +        <groupId>net.pl3x.avalanche</groupId>
 +        <artifactId>avalanche-module</artifactId>
-         <version>1.16-R0.2-SNAPSHOT</version>
+         <version>1.16-R0.3-SNAPSHOT</version>
          <relativePath>../pom.xml</relativePath>
      </parent>
  
@@ -318,11 +318,11 @@ index 8fb7bb6f2..74b3d1d5f 100644
 -    <artifactId>waterfall-module-cmd-alert</artifactId>
 +    <groupId>net.pl3x.avalanche</groupId>
 +    <artifactId>avalanche-module-cmd-alert</artifactId>
-     <version>1.16-R0.2-SNAPSHOT</version>
+     <version>1.16-R0.3-SNAPSHOT</version>
      <packaging>jar</packaging>
  
 diff --git a/module/cmd-find/pom.xml b/module/cmd-find/pom.xml
-index a247e1a7f..52483606a 100644
+index f4a45cec1..011dbf959 100644
 --- a/module/cmd-find/pom.xml
 +++ b/module/cmd-find/pom.xml
 @@ -4,14 +4,14 @@
@@ -333,7 +333,7 @@ index a247e1a7f..52483606a 100644
 -        <artifactId>waterfall-module</artifactId>
 +        <groupId>net.pl3x.avalanche</groupId>
 +        <artifactId>avalanche-module</artifactId>
-         <version>1.16-R0.2-SNAPSHOT</version>
+         <version>1.16-R0.3-SNAPSHOT</version>
          <relativePath>../pom.xml</relativePath>
      </parent>
  
@@ -341,11 +341,11 @@ index a247e1a7f..52483606a 100644
 -    <artifactId>waterfall-module-cmd-find</artifactId>
 +    <groupId>net.pl3x.avalanche</groupId>
 +    <artifactId>avalanche-module-cmd-find</artifactId>
-     <version>1.16-R0.2-SNAPSHOT</version>
+     <version>1.16-R0.3-SNAPSHOT</version>
      <packaging>jar</packaging>
  
 diff --git a/module/cmd-list/pom.xml b/module/cmd-list/pom.xml
-index eac49ae29..f6e5dd54d 100644
+index 5c4c17172..1e37c35cb 100644
 --- a/module/cmd-list/pom.xml
 +++ b/module/cmd-list/pom.xml
 @@ -4,14 +4,14 @@
@@ -356,7 +356,7 @@ index eac49ae29..f6e5dd54d 100644
 -        <artifactId>waterfall-module</artifactId>
 +        <groupId>net.pl3x.avalanche</groupId>
 +        <artifactId>avalanche-module</artifactId>
-         <version>1.16-R0.2-SNAPSHOT</version>
+         <version>1.16-R0.3-SNAPSHOT</version>
          <relativePath>../pom.xml</relativePath>
      </parent>
  
@@ -364,11 +364,11 @@ index eac49ae29..f6e5dd54d 100644
 -    <artifactId>waterfall-module-cmd-list</artifactId>
 +    <groupId>net.pl3x.avalanche</groupId>
 +    <artifactId>avalanche-module-cmd-list</artifactId>
-     <version>1.16-R0.2-SNAPSHOT</version>
+     <version>1.16-R0.3-SNAPSHOT</version>
      <packaging>jar</packaging>
  
 diff --git a/module/cmd-send/pom.xml b/module/cmd-send/pom.xml
-index 56cd2e2f7..ab078ae6a 100644
+index ed209b579..54e48962b 100644
 --- a/module/cmd-send/pom.xml
 +++ b/module/cmd-send/pom.xml
 @@ -4,14 +4,14 @@
@@ -379,7 +379,7 @@ index 56cd2e2f7..ab078ae6a 100644
 -        <artifactId>waterfall-module</artifactId>
 +        <groupId>net.pl3x.avalanche</groupId>
 +        <artifactId>avalanche-module</artifactId>
-         <version>1.16-R0.2-SNAPSHOT</version>
+         <version>1.16-R0.3-SNAPSHOT</version>
          <relativePath>../pom.xml</relativePath>
      </parent>
  
@@ -387,11 +387,11 @@ index 56cd2e2f7..ab078ae6a 100644
 -    <artifactId>waterfall-module-cmd-send</artifactId>
 +    <groupId>net.pl3x.avalanche</groupId>
 +    <artifactId>avalanche-module-cmd-send</artifactId>
-     <version>1.16-R0.2-SNAPSHOT</version>
+     <version>1.16-R0.3-SNAPSHOT</version>
      <packaging>jar</packaging>
  
 diff --git a/module/cmd-server/pom.xml b/module/cmd-server/pom.xml
-index d5d0c3872..20a172497 100644
+index 542d42c3d..7d3e04e79 100644
 --- a/module/cmd-server/pom.xml
 +++ b/module/cmd-server/pom.xml
 @@ -4,14 +4,14 @@
@@ -402,7 +402,7 @@ index d5d0c3872..20a172497 100644
 -        <artifactId>waterfall-module</artifactId>
 +        <groupId>net.pl3x.avalanche</groupId>
 +        <artifactId>avalanche-module</artifactId>
-         <version>1.16-R0.2-SNAPSHOT</version>
+         <version>1.16-R0.3-SNAPSHOT</version>
          <relativePath>../pom.xml</relativePath>
      </parent>
  
@@ -410,11 +410,11 @@ index d5d0c3872..20a172497 100644
 -    <artifactId>waterfall-module-cmd-server</artifactId>
 +    <groupId>net.pl3x.avalanche</groupId>
 +    <artifactId>avalanche-module-cmd-server</artifactId>
-     <version>1.16-R0.2-SNAPSHOT</version>
+     <version>1.16-R0.3-SNAPSHOT</version>
      <packaging>jar</packaging>
  
 diff --git a/module/pom.xml b/module/pom.xml
-index 39c5f9a7b..c4dab7ced 100644
+index b195f6870..dd7b76c9e 100644
 --- a/module/pom.xml
 +++ b/module/pom.xml
 @@ -4,19 +4,19 @@
@@ -425,7 +425,7 @@ index 39c5f9a7b..c4dab7ced 100644
 -        <artifactId>waterfall-parent</artifactId>
 +        <groupId>net.pl3x.avalanche</groupId>
 +        <artifactId>avalanche-parent</artifactId>
-         <version>1.16-R0.2-SNAPSHOT</version>
+         <version>1.16-R0.3-SNAPSHOT</version>
          <relativePath>../pom.xml</relativePath>
      </parent>
  
@@ -433,7 +433,7 @@ index 39c5f9a7b..c4dab7ced 100644
 -    <artifactId>waterfall-module</artifactId>
 +    <groupId>net.pl3x.avalanche</groupId>
 +    <artifactId>avalanche-module</artifactId>
-     <version>1.16-R0.2-SNAPSHOT</version>
+     <version>1.16-R0.3-SNAPSHOT</version>
      <packaging>pom</packaging>
  
 -    <name>Waterfall Modules</name>
@@ -463,7 +463,7 @@ index 39c5f9a7b..c4dab7ced 100644
              <scope>compile</scope>
          </dependency>
 diff --git a/module/reconnect-yaml/pom.xml b/module/reconnect-yaml/pom.xml
-index 415674cce..a84e77b07 100644
+index e46cf142b..f5eb94871 100644
 --- a/module/reconnect-yaml/pom.xml
 +++ b/module/reconnect-yaml/pom.xml
 @@ -4,14 +4,14 @@
@@ -474,7 +474,7 @@ index 415674cce..a84e77b07 100644
 -        <artifactId>waterfall-module</artifactId>
 +        <groupId>net.pl3x.avalanche</groupId>
 +        <artifactId>avalanche-module</artifactId>
-         <version>1.16-R0.2-SNAPSHOT</version>
+         <version>1.16-R0.3-SNAPSHOT</version>
          <relativePath>../pom.xml</relativePath>
      </parent>
  
@@ -482,11 +482,11 @@ index 415674cce..a84e77b07 100644
 -    <artifactId>waterfall-module-reconnect-yaml</artifactId>
 +    <groupId>net.pl3x.avalanche</groupId>
 +    <artifactId>avalanche-module-reconnect-yaml</artifactId>
-     <version>1.16-R0.2-SNAPSHOT</version>
+     <version>1.16-R0.3-SNAPSHOT</version>
      <packaging>jar</packaging>
  
 diff --git a/native/pom.xml b/native/pom.xml
-index c69672f9f..f0717204d 100644
+index 6453a6f04..eb9d95637 100644
 --- a/native/pom.xml
 +++ b/native/pom.xml
 @@ -4,19 +4,19 @@
@@ -497,7 +497,7 @@ index c69672f9f..f0717204d 100644
 -        <artifactId>waterfall-parent</artifactId>
 +        <groupId>net.pl3x.avalanche</groupId>
 +        <artifactId>avalanche-parent</artifactId>
-         <version>1.16-R0.2-SNAPSHOT</version>
+         <version>1.16-R0.3-SNAPSHOT</version>
          <relativePath>../pom.xml</relativePath>
      </parent>
  
@@ -505,7 +505,7 @@ index c69672f9f..f0717204d 100644
 -    <artifactId>waterfall-native</artifactId>
 +    <groupId>net.pl3x.avalanche</groupId>
 +    <artifactId>avalanche-native</artifactId>
-     <version>1.16-R0.2-SNAPSHOT</version>
+     <version>1.16-R0.3-SNAPSHOT</version>
      <packaging>jar</packaging>
  
 -    <name>Waterfall-Native</name>
@@ -516,7 +516,7 @@ index c69672f9f..f0717204d 100644
      <dependencies>
          <dependency>
 diff --git a/pom.xml b/pom.xml
-index 5b283b4ba..6c644864c 100644
+index 97908819b..baafa66c1 100644
 --- a/pom.xml
 +++ b/pom.xml
 @@ -4,24 +4,24 @@
@@ -535,7 +535,7 @@ index 5b283b4ba..6c644864c 100644
 -    <artifactId>waterfall-parent</artifactId>
 +    <groupId>net.pl3x.avalanche</groupId>
 +    <artifactId>avalanche-parent</artifactId>
-     <version>1.16-R0.2-SNAPSHOT</version>
+     <version>1.16-R0.3-SNAPSHOT</version>
      <packaging>pom</packaging>
  
 -    <name>Waterfall-Parent</name>
@@ -591,7 +591,7 @@ index 5b283b4ba..6c644864c 100644
          <build.number>unknown</build.number>
          <netty.version>4.1.49.Final</netty.version>
 diff --git a/protocol/pom.xml b/protocol/pom.xml
-index e58a361e5..1be203274 100644
+index cfc33af26..8f5826416 100644
 --- a/protocol/pom.xml
 +++ b/protocol/pom.xml
 @@ -4,19 +4,19 @@
@@ -602,7 +602,7 @@ index e58a361e5..1be203274 100644
 -        <artifactId>waterfall-parent</artifactId>
 +        <groupId>net.pl3x.avalanche</groupId>
 +        <artifactId>avalanche-parent</artifactId>
-         <version>1.16-R0.2-SNAPSHOT</version>
+         <version>1.16-R0.3-SNAPSHOT</version>
          <relativePath>../pom.xml</relativePath>
      </parent>
  
@@ -610,7 +610,7 @@ index e58a361e5..1be203274 100644
 -    <artifactId>waterfall-protocol</artifactId>
 +    <groupId>net.pl3x.avalanche</groupId>
 +    <artifactId>avalanche-protocol</artifactId>
-     <version>1.16-R0.2-SNAPSHOT</version>
+     <version>1.16-R0.3-SNAPSHOT</version>
      <packaging>jar</packaging>
  
 -    <name>Waterfall-Protocol</name>
@@ -632,7 +632,7 @@ index e58a361e5..1be203274 100644
              <scope>compile</scope>
          </dependency>
 diff --git a/proxy/pom.xml b/proxy/pom.xml
-index 4c61d336d..b7609562a 100644
+index fca4d6090..cb9030c6c 100644
 --- a/proxy/pom.xml
 +++ b/proxy/pom.xml
 @@ -4,18 +4,18 @@
@@ -643,7 +643,7 @@ index 4c61d336d..b7609562a 100644
 -        <artifactId>waterfall-parent</artifactId>
 +        <groupId>net.pl3x.avalanche</groupId>
 +        <artifactId>avalanche-parent</artifactId>
-         <version>1.16-R0.2-SNAPSHOT</version>
+         <version>1.16-R0.3-SNAPSHOT</version>
          <relativePath>../pom.xml</relativePath>
      </parent>
  
@@ -651,7 +651,7 @@ index 4c61d336d..b7609562a 100644
 -    <artifactId>waterfall-proxy</artifactId>
 +    <groupId>net.pl3x.avalanche</groupId>
 +    <artifactId>avalanche-proxy</artifactId>
-     <version>1.16-R0.2-SNAPSHOT</version>
+     <version>1.16-R0.3-SNAPSHOT</version>
      <packaging>jar</packaging>
  
 -    <name>Waterfall-Proxy</name>
@@ -703,7 +703,7 @@ index 4c61d336d..b7609562a 100644
              <scope>compile</scope>
          </dependency>
 diff --git a/query/pom.xml b/query/pom.xml
-index 15cc4166e..d8a5ff018 100644
+index 98abf7064..c1cd7a119 100644
 --- a/query/pom.xml
 +++ b/query/pom.xml
 @@ -4,19 +4,19 @@
@@ -714,7 +714,7 @@ index 15cc4166e..d8a5ff018 100644
 -        <artifactId>waterfall-parent</artifactId>
 +        <groupId>net.pl3x.avalanche</groupId>
 +        <artifactId>avalanche-parent</artifactId>
-         <version>1.16-R0.2-SNAPSHOT</version>
+         <version>1.16-R0.3-SNAPSHOT</version>
          <relativePath>../pom.xml</relativePath>
      </parent>
  
@@ -722,7 +722,7 @@ index 15cc4166e..d8a5ff018 100644
 -    <artifactId>waterfall-query</artifactId>
 +    <groupId>net.pl3x.avalanche</groupId>
 +    <artifactId>avalanche-query</artifactId>
-     <version>1.16-R0.2-SNAPSHOT</version>
+     <version>1.16-R0.3-SNAPSHOT</version>
      <packaging>jar</packaging>
  
 -    <name>Waterfall-Query</name>
