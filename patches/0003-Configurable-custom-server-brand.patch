@@ -1,11 +1,11 @@
-From e754b4d760d4b58d08afad8515e90b5dc50b1f6d Mon Sep 17 00:00:00 2001
+From 7572efcd1308dddbe8ecfcec533e44a2441d4a15 Mon Sep 17 00:00:00 2001
 From: William Blake Galbreath <Blake.Galbreath@GMail.com>
 Date: Tue, 9 Jun 2020 22:46:29 -0500
 Subject: [PATCH] Configurable custom server brand
 
 
 diff --git a/proxy/src/main/java/net/md_5/bungee/ServerConnector.java b/proxy/src/main/java/net/md_5/bungee/ServerConnector.java
-index 78401dae..72cd9b35 100644
+index b486f2aaa..b39f17493 100644
 --- a/proxy/src/main/java/net/md_5/bungee/ServerConnector.java
 +++ b/proxy/src/main/java/net/md_5/bungee/ServerConnector.java
 @@ -268,8 +268,15 @@ public class ServerConnector extends PacketHandler
@@ -26,10 +26,10 @@ index 78401dae..72cd9b35 100644
                  brand.release();
              }
 diff --git a/proxy/src/main/java/net/md_5/bungee/connection/DownstreamBridge.java b/proxy/src/main/java/net/md_5/bungee/connection/DownstreamBridge.java
-index 8c7e3ab8..677c9bd7 100644
+index 44e6ed3f1..c9541c0fa 100644
 --- a/proxy/src/main/java/net/md_5/bungee/connection/DownstreamBridge.java
 +++ b/proxy/src/main/java/net/md_5/bungee/connection/DownstreamBridge.java
-@@ -281,8 +281,15 @@ public class DownstreamBridge extends PacketHandler
+@@ -286,8 +286,15 @@ public class DownstreamBridge extends PacketHandler
  
              Preconditions.checkState( !serverBrand.contains( bungee.getName() ), "Cannot connect proxy to itself!" );
  
@@ -47,7 +47,7 @@ index 8c7e3ab8..677c9bd7 100644
              brand.release();
              // changes in the packet are ignored so we need to send it manually
 diff --git a/proxy/src/main/java/net/md_5/bungee/connection/InitialHandler.java b/proxy/src/main/java/net/md_5/bungee/connection/InitialHandler.java
-index b848e451..967ea1df 100644
+index b848e4515..967ea1df9 100644
 --- a/proxy/src/main/java/net/md_5/bungee/connection/InitialHandler.java
 +++ b/proxy/src/main/java/net/md_5/bungee/connection/InitialHandler.java
 @@ -173,7 +173,14 @@ public class InitialHandler extends PacketHandler implements PendingConnection
@@ -84,7 +84,7 @@ index b848e451..967ea1df 100644
                  motd, BungeeCord.getInstance().config.getFaviconObject()
          );
 diff --git a/proxy/src/main/resources/messages.properties b/proxy/src/main/resources/messages.properties
-index 6e3ef0a4..63a6b484 100644
+index 6e3ef0a47..63a6b4841 100644
 --- a/proxy/src/main/resources/messages.properties
 +++ b/proxy/src/main/resources/messages.properties
 @@ -38,3 +38,4 @@ you_got_summoned=\u00a76Summoned to {0} by {1}
