@@ -1,4 +1,4 @@
-From 7572efcd1308dddbe8ecfcec533e44a2441d4a15 Mon Sep 17 00:00:00 2001
+From 1a3cd1f40ef4e43e72758f3141346667a0267ce7 Mon Sep 17 00:00:00 2001
 From: William Blake Galbreath <Blake.Galbreath@GMail.com>
 Date: Tue, 9 Jun 2020 22:46:29 -0500
 Subject: [PATCH] Configurable custom server brand
@@ -47,10 +47,10 @@ index 44e6ed3f1..c9541c0fa 100644
              brand.release();
              // changes in the packet are ignored so we need to send it manually
 diff --git a/proxy/src/main/java/net/md_5/bungee/connection/InitialHandler.java b/proxy/src/main/java/net/md_5/bungee/connection/InitialHandler.java
-index b848e4515..967ea1df9 100644
+index 4b40b465d..6f0510335 100644
 --- a/proxy/src/main/java/net/md_5/bungee/connection/InitialHandler.java
 +++ b/proxy/src/main/java/net/md_5/bungee/connection/InitialHandler.java
-@@ -173,7 +173,14 @@ public class InitialHandler extends PacketHandler implements PendingConnection
+@@ -175,7 +175,14 @@ public class InitialHandler extends PacketHandler implements PendingConnection
          this.legacy = true;
          final boolean v1_5 = ping.isV1_5();
  
@@ -66,7 +66,7 @@ index b848e4515..967ea1df9 100644
                  new ServerPing.Players( listener.getMaxPlayers(), bungee.getOnlineCount(), null ),
                  new TextComponent( TextComponent.fromLegacyText( listener.getMotd() ) ), (Favicon) null );
  
-@@ -221,8 +228,15 @@ public class InitialHandler extends PacketHandler implements PendingConnection
+@@ -223,8 +230,15 @@ public class InitialHandler extends PacketHandler implements PendingConnection
  
      private ServerPing getPingInfo(String motd, int protocol)
      {
