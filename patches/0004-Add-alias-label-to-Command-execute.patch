@@ -1,14 +1,14 @@
-From 960c6759e76571ce83dd1aeb72baa290800fc5e6 Mon Sep 17 00:00:00 2001
+From 1b692e32a5d7c5d58ed1b1815cc5616e603c47c5 Mon Sep 17 00:00:00 2001
 From: William Blake Galbreath <Blake.Galbreath@GMail.com>
 Date: Tue, 9 Jun 2020 21:53:20 -0500
 Subject: [PATCH] Add alias label to Command#execute
 
 
 diff --git a/api/src/main/java/net/md_5/bungee/api/plugin/Command.java b/api/src/main/java/net/md_5/bungee/api/plugin/Command.java
-index eba3040a..eec5b363 100644
+index b4566327..1c7adb6e 100644
 --- a/api/src/main/java/net/md_5/bungee/api/plugin/Command.java
 +++ b/api/src/main/java/net/md_5/bungee/api/plugin/Command.java
-@@ -50,7 +50,22 @@ public abstract class Command
+@@ -54,7 +54,22 @@ public abstract class Command
       * @param sender the executor of this command
       * @param args arguments used to invoke this command
       */
@@ -33,7 +33,7 @@ index eba3040a..eec5b363 100644
      /**
       * Check if this command can be executed by the given sender.
 diff --git a/api/src/main/java/net/md_5/bungee/api/plugin/PluginManager.java b/api/src/main/java/net/md_5/bungee/api/plugin/PluginManager.java
-index 431d4d6f..55148924 100644
+index 969533df..022a28e3 100644
 --- a/api/src/main/java/net/md_5/bungee/api/plugin/PluginManager.java
 +++ b/api/src/main/java/net/md_5/bungee/api/plugin/PluginManager.java
 @@ -194,7 +194,7 @@ public final class PluginManager
@@ -46,5 +46,5 @@ index 431d4d6f..55148924 100644
          } catch ( Exception ex ) {
              sender.sendMessage( ChatColor.RED + "An internal error occurred whilst executing this command, please check the console log for details." );
 -- 
-2.26.2
+2.25.1
 
