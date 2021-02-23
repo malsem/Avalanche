@@ -1,11 +1,11 @@
-From 387c9325c4d89cd373358accb3a2aa0d071c7440 Mon Sep 17 00:00:00 2001
+From 755d7fc06e54913c99f8f39eb02f85f47ecaf688 Mon Sep 17 00:00:00 2001
 From: William Blake Galbreath <Blake.Galbreath@GMail.com>
 Date: Wed, 10 Jun 2020 13:24:02 -0500
 Subject: [PATCH] Rebrand
 
 
 diff --git a/bootstrap/src/main/java/net/md_5/bungee/Bootstrap.java b/bootstrap/src/main/java/net/md_5/bungee/Bootstrap.java
-index a4516ed96..80e46e300 100644
+index a4516ed9..80e46e30 100644
 --- a/bootstrap/src/main/java/net/md_5/bungee/Bootstrap.java
 +++ b/bootstrap/src/main/java/net/md_5/bungee/Bootstrap.java
 @@ -7,7 +7,7 @@ public class Bootstrap
@@ -18,7 +18,7 @@ index a4516ed96..80e46e300 100644
              return;
          }
 diff --git a/log/src/main/java/net/md_5/bungee/log/LogDispatcher.java b/log/src/main/java/net/md_5/bungee/log/LogDispatcher.java
-index d703d6d24..db465d52d 100644
+index d703d6d2..db465d52 100644
 --- a/log/src/main/java/net/md_5/bungee/log/LogDispatcher.java
 +++ b/log/src/main/java/net/md_5/bungee/log/LogDispatcher.java
 @@ -12,7 +12,7 @@ public class LogDispatcher extends Thread
@@ -31,28 +31,12 @@ index d703d6d24..db465d52d 100644
      }
  
 diff --git a/pom.xml b/pom.xml
-index b444e96b7..44920abe3 100644
+index b004f717..bb2f27b7 100644
 --- a/pom.xml
 +++ b/pom.xml
-@@ -79,7 +79,7 @@
-     </ciManagement>
- 
-     <properties>
--        <build.number>unknown</build.number>
-+        <build.number>SNAPSHOT</build.number>
-         <netty.version>4.1.49.Final</netty.version>
-         <maven.compiler.source>1.8</maven.compiler.source>
-         <maven.compiler.target>1.8</maven.compiler.target>
-@@ -116,17 +116,18 @@
-     <build>
-         <plugins>
-             <plugin>
--                <groupId>net.md-5</groupId>
--                <artifactId>scriptus</artifactId>
--                <version>0.3.2</version>
-+                <groupId>com.lukegb.mojo</groupId>
-+                <artifactId>gitdescribe-maven-plugin</artifactId>
-+                <version>1.3</version>
+@@ -120,13 +120,14 @@
+                 <artifactId>gitdescribe-maven-plugin</artifactId>
+                 <version>1.3</version>
                  <configuration>
 -                    <format>git:${project.name}:${project.version}:%s:${build.number}</format>
 +                    <outputPrefix>git-Avalanche-</outputPrefix>
@@ -69,7 +53,7 @@ index b444e96b7..44920abe3 100644
                      </execution>
                  </executions>
 diff --git a/proxy/src/main/java/net/md_5/bungee/BungeeCord.java b/proxy/src/main/java/net/md_5/bungee/BungeeCord.java
-index 2938f2f15..1d9ad39f9 100644
+index 2938f2f1..1d9ad39f 100644
 --- a/proxy/src/main/java/net/md_5/bungee/BungeeCord.java
 +++ b/proxy/src/main/java/net/md_5/bungee/BungeeCord.java
 @@ -188,7 +188,7 @@ public class BungeeCord extends ProxyServer
@@ -82,7 +66,7 @@ index 2938f2f15..1d9ad39f9 100644
          try
          {
 diff --git a/proxy/src/main/java/net/md_5/bungee/BungeeCordLauncher.java b/proxy/src/main/java/net/md_5/bungee/BungeeCordLauncher.java
-index dc2c584d1..2422046cb 100644
+index dc2c584d..2422046c 100644
 --- a/proxy/src/main/java/net/md_5/bungee/BungeeCordLauncher.java
 +++ b/proxy/src/main/java/net/md_5/bungee/BungeeCordLauncher.java
 @@ -40,7 +40,7 @@ public class BungeeCordLauncher
@@ -104,7 +88,7 @@ index dc2c584d1..2422046cb 100644
  
          if ( !options.has( "noconsole" ) )
 diff --git a/proxy/src/main/java/net/md_5/bungee/command/CommandBungee.java b/proxy/src/main/java/net/md_5/bungee/command/CommandBungee.java
-index b26035cf9..0954cc046 100644
+index b26035cf..0954cc04 100644
 --- a/proxy/src/main/java/net/md_5/bungee/command/CommandBungee.java
 +++ b/proxy/src/main/java/net/md_5/bungee/command/CommandBungee.java
 @@ -16,6 +16,6 @@ public class CommandBungee extends Command
@@ -116,7 +100,7 @@ index b26035cf9..0954cc046 100644
      }
  }
 diff --git a/proxy/src/main/java/net/md_5/bungee/command/CommandReload.java b/proxy/src/main/java/net/md_5/bungee/command/CommandReload.java
-index 720d0c3b5..4ae1ddbca 100644
+index 720d0c3b..4ae1ddbc 100644
 --- a/proxy/src/main/java/net/md_5/bungee/command/CommandReload.java
 +++ b/proxy/src/main/java/net/md_5/bungee/command/CommandReload.java
 @@ -23,7 +23,7 @@ public class CommandReload extends Command
@@ -130,7 +114,7 @@ index 720d0c3b5..4ae1ddbca 100644
      }
  }
 diff --git a/proxy/src/main/java/net/md_5/bungee/conf/YamlConfig.java b/proxy/src/main/java/net/md_5/bungee/conf/YamlConfig.java
-index 65121ba24..81629f36b 100644
+index 65121ba2..81629f36 100644
 --- a/proxy/src/main/java/net/md_5/bungee/conf/YamlConfig.java
 +++ b/proxy/src/main/java/net/md_5/bungee/conf/YamlConfig.java
 @@ -227,7 +227,7 @@ public class YamlConfig implements ConfigurationAdapter
@@ -143,7 +127,7 @@ index 65121ba24..81629f36b 100644
              SocketAddress address = Util.getAddr( addr );
              ServerInfo info = ProxyServer.getInstance().constructServerInfo( name, address, motd, restricted );
 diff --git a/proxy/src/main/java/net/md_5/bungee/module/JenkinsModuleSource.java b/proxy/src/main/java/net/md_5/bungee/module/JenkinsModuleSource.java
-index 9b20d0df5..a7f552a8e 100644
+index 9b20d0df..a7f552a8 100644
 --- a/proxy/src/main/java/net/md_5/bungee/module/JenkinsModuleSource.java
 +++ b/proxy/src/main/java/net/md_5/bungee/module/JenkinsModuleSource.java
 @@ -18,7 +18,7 @@ public class JenkinsModuleSource implements ModuleSource
@@ -156,7 +140,7 @@ index 9b20d0df5..a7f552a8e 100644
              // 15 second timeout at various stages
              con.setConnectTimeout( 15000 );
 diff --git a/proxy/src/main/java/net/md_5/bungee/module/ModuleVersion.java b/proxy/src/main/java/net/md_5/bungee/module/ModuleVersion.java
-index d52b8106e..baac55a84 100644
+index d52b8106..baac55a8 100644
 --- a/proxy/src/main/java/net/md_5/bungee/module/ModuleVersion.java
 +++ b/proxy/src/main/java/net/md_5/bungee/module/ModuleVersion.java
 @@ -14,8 +14,8 @@ public class ModuleVersion
@@ -180,5 +164,5 @@ index d52b8106e..baac55a84 100644
              return null;
          }
 -- 
-2.26.2
+2.25.1
 

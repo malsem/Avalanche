@@ -1,11 +1,11 @@
-From 2b955eb2b4e37cb7c75b687a10559a63ac87198d Mon Sep 17 00:00:00 2001
+From e4816730bf3936fe2bea6e9a4774451a401b7021 Mon Sep 17 00:00:00 2001
 From: Troy Frew <fuzzy_bot@arenaga.me>
 Date: Tue, 15 Nov 2016 08:56:43 -0500
 Subject: [PATCH] POM Changes
 
 
 diff --git a/api/pom.xml b/api/pom.xml
-index 87b279b87..0e326558a 100644
+index 10db38b7..12494a75 100644
 --- a/api/pom.xml
 +++ b/api/pom.xml
 @@ -4,42 +4,42 @@
@@ -65,7 +65,7 @@ index 87b279b87..0e326558a 100644
              <scope>compile</scope>
          </dependency>
 diff --git a/bootstrap/pom.xml b/bootstrap/pom.xml
-index a43db9076..f33b684e8 100644
+index 0a890393..b679dee2 100644
 --- a/bootstrap/pom.xml
 +++ b/bootstrap/pom.xml
 @@ -4,19 +4,19 @@
@@ -114,7 +114,7 @@ index a43db9076..f33b684e8 100644
              <plugin>
                  <groupId>org.apache.maven.plugins</groupId>
 diff --git a/chat/pom.xml b/chat/pom.xml
-index 8523d99a4..c6b94ea98 100644
+index 8523d99a..c6b94ea9 100644
 --- a/chat/pom.xml
 +++ b/chat/pom.xml
 @@ -4,19 +4,19 @@
@@ -144,7 +144,7 @@ index 8523d99a4..c6b94ea98 100644
      <dependencies>
          <dependency>
 diff --git a/config/pom.xml b/config/pom.xml
-index 5f4f2b330..59826386a 100644
+index 099a4643..7365e18f 100644
 --- a/config/pom.xml
 +++ b/config/pom.xml
 @@ -4,19 +4,19 @@
@@ -174,7 +174,7 @@ index 5f4f2b330..59826386a 100644
      <dependencies>
          <dependency>
 diff --git a/event/pom.xml b/event/pom.xml
-index f4f7fdb0f..bb16280ed 100644
+index f4f7fdb0..bb16280e 100644
 --- a/event/pom.xml
 +++ b/event/pom.xml
 @@ -4,17 +4,17 @@
@@ -202,7 +202,7 @@ index f4f7fdb0f..bb16280ed 100644
 +    <description>Generic java event dispatching API intended for use with Avalanche</description>
  </project>
 diff --git a/log/pom.xml b/log/pom.xml
-index 93bd4bcc1..8e1102f61 100644
+index 93bd4bcc..8e1102f6 100644
 --- a/log/pom.xml
 +++ b/log/pom.xml
 @@ -4,19 +4,19 @@
@@ -243,7 +243,7 @@ index 93bd4bcc1..8e1102f61 100644
              <scope>compile</scope>
          </dependency>
 diff --git a/log4j/pom.xml b/log4j/pom.xml
-index 1cd12d6a8..997ec7622 100644
+index 1cd12d6a..997ec762 100644
 --- a/log4j/pom.xml
 +++ b/log4j/pom.xml
 @@ -3,19 +3,19 @@
@@ -298,7 +298,7 @@ index 1cd12d6a8..997ec7622 100644
      </dependencies>
  </project>
 diff --git a/module/cmd-alert/pom.xml b/module/cmd-alert/pom.xml
-index 8eea364fb..27b253ce3 100644
+index 8eea364f..27b253ce 100644
 --- a/module/cmd-alert/pom.xml
 +++ b/module/cmd-alert/pom.xml
 @@ -4,14 +4,14 @@
@@ -321,7 +321,7 @@ index 8eea364fb..27b253ce3 100644
      <packaging>jar</packaging>
  
 diff --git a/module/cmd-find/pom.xml b/module/cmd-find/pom.xml
-index 9a2eb7795..07299f4a3 100644
+index 9a2eb779..07299f4a 100644
 --- a/module/cmd-find/pom.xml
 +++ b/module/cmd-find/pom.xml
 @@ -4,14 +4,14 @@
@@ -344,7 +344,7 @@ index 9a2eb7795..07299f4a3 100644
      <packaging>jar</packaging>
  
 diff --git a/module/cmd-list/pom.xml b/module/cmd-list/pom.xml
-index 57b0cdd8d..ec7e8c885 100644
+index 57b0cdd8..ec7e8c88 100644
 --- a/module/cmd-list/pom.xml
 +++ b/module/cmd-list/pom.xml
 @@ -4,14 +4,14 @@
@@ -367,7 +367,7 @@ index 57b0cdd8d..ec7e8c885 100644
      <packaging>jar</packaging>
  
 diff --git a/module/cmd-send/pom.xml b/module/cmd-send/pom.xml
-index 990c0a6d5..a6813ede0 100644
+index 990c0a6d..a6813ede 100644
 --- a/module/cmd-send/pom.xml
 +++ b/module/cmd-send/pom.xml
 @@ -4,14 +4,14 @@
@@ -390,7 +390,7 @@ index 990c0a6d5..a6813ede0 100644
      <packaging>jar</packaging>
  
 diff --git a/module/cmd-server/pom.xml b/module/cmd-server/pom.xml
-index 1b4e0455d..1854170a9 100644
+index 1b4e0455..1854170a 100644
 --- a/module/cmd-server/pom.xml
 +++ b/module/cmd-server/pom.xml
 @@ -4,14 +4,14 @@
@@ -413,7 +413,7 @@ index 1b4e0455d..1854170a9 100644
      <packaging>jar</packaging>
  
 diff --git a/module/pom.xml b/module/pom.xml
-index 0b9fc4aa4..edc678d5a 100644
+index 0b9fc4aa..edc678d5 100644
 --- a/module/pom.xml
 +++ b/module/pom.xml
 @@ -4,19 +4,19 @@
@@ -462,7 +462,7 @@ index 0b9fc4aa4..edc678d5a 100644
              <scope>compile</scope>
          </dependency>
 diff --git a/module/reconnect-yaml/pom.xml b/module/reconnect-yaml/pom.xml
-index 0d3a3b70f..2fea08507 100644
+index 0d3a3b70..2fea0850 100644
 --- a/module/reconnect-yaml/pom.xml
 +++ b/module/reconnect-yaml/pom.xml
 @@ -4,14 +4,14 @@
@@ -485,7 +485,7 @@ index 0d3a3b70f..2fea08507 100644
      <packaging>jar</packaging>
  
 diff --git a/native/pom.xml b/native/pom.xml
-index ec465dd38..c18f556e8 100644
+index ec465dd3..c18f556e 100644
 --- a/native/pom.xml
 +++ b/native/pom.xml
 @@ -4,19 +4,19 @@
@@ -515,7 +515,7 @@ index ec465dd38..c18f556e8 100644
      <dependencies>
          <dependency>
 diff --git a/pom.xml b/pom.xml
-index 3ca7ca912..1c25230a5 100644
+index fd03c640..b004f717 100644
 --- a/pom.xml
 +++ b/pom.xml
 @@ -4,24 +4,24 @@
@@ -588,9 +588,22 @@ index 3ca7ca912..1c25230a5 100644
 -
      <properties>
          <build.number>unknown</build.number>
-         <netty.version>4.1.49.Final</netty.version>
+         <netty.version>4.1.53.Final</netty.version>
+@@ -127,9 +116,9 @@
+     <build>
+         <plugins>
+             <plugin>
+-                <groupId>net.md-5</groupId>
+-                <artifactId>scriptus</artifactId>
+-                <version>0.4.1</version>
++                <groupId>com.lukegb.mojo</groupId>
++                <artifactId>gitdescribe-maven-plugin</artifactId>
++                <version>1.3</version>
+                 <configuration>
+                     <format>git:${project.name}:${project.version}:%s:${build.number}</format>
+                 </configuration>
 diff --git a/protocol/pom.xml b/protocol/pom.xml
-index 8571f3780..67fe76cca 100644
+index 8571f378..67fe76cc 100644
 --- a/protocol/pom.xml
 +++ b/protocol/pom.xml
 @@ -4,19 +4,19 @@
@@ -631,7 +644,7 @@ index 8571f3780..67fe76cca 100644
              <scope>compile</scope>
          </dependency>
 diff --git a/proxy/pom.xml b/proxy/pom.xml
-index f0c36550f..557c3db60 100644
+index f0c36550..557c3db6 100644
 --- a/proxy/pom.xml
 +++ b/proxy/pom.xml
 @@ -4,18 +4,18 @@
@@ -702,7 +715,7 @@ index f0c36550f..557c3db60 100644
              <scope>compile</scope>
          </dependency>
 diff --git a/query/pom.xml b/query/pom.xml
-index 1c845a6df..2b3a7ab2c 100644
+index 1c845a6d..2b3a7ab2 100644
 --- a/query/pom.xml
 +++ b/query/pom.xml
 @@ -4,19 +4,19 @@
@@ -743,5 +756,5 @@ index 1c845a6df..2b3a7ab2c 100644
              <scope>compile</scope>
          </dependency>
 -- 
-2.26.2
+2.25.1
 
